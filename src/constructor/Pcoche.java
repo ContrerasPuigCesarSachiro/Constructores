@@ -12,7 +12,7 @@ package constructor;
 public class Pcoche {
     void imprimeCoche(Coche gas)
    {
-     //   usr.nombre equivale en este caso a usr.getNombre()
+     //   gas.nombre equivale en este caso a gas.getNombre()
      System.out.println("\nNombre: " + gas.nombre );
      System.out.println("Litros de gasolina: " + gas.getGasolina() +"\n" );
 
@@ -21,18 +21,18 @@ public class Pcoche {
    public static void main(String args[])
    {
       Pcoche prog = new Pcoche( );
-      /* Se declaran dos objetos de la clase Usuario4 */
+      /* Se declaran dos objetos de la clase Coche */
       Coche gas1,gas2;
 
       /* Se utiliza el constructor por omisión */
       gas1 = new Coche( );
       prog.imprimeCoche(gas1);
 
-     /* Se utiliza el segundo constructor de Usuario4 */
+     /* Se utiliza el segundo constructor de Coche */
       gas2 = new Coche("Neon",14);
       prog.imprimeCoche(gas2);
 
-     /* Se utiliza el tercer constructor de Usuario4 */
+     /* Se utiliza el tercer constructor de Coche */
       gas1 = new Coche(gas2);
 
       gas1.setGasolina(20);

@@ -7,7 +7,7 @@ package constructor;
 
 /**
  *
- * @author sachs
+ * @author Contreras Puig César Sachiro
  */
 public class Libro {
      String nombre;
